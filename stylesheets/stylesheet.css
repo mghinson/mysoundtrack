@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   color: #606c71; }
 
-.basic-slide:focus, input:focus {
+.basic-slide {
   color: rgba(0,0,0,.1); 
   text-indent: 0;
   outline: none;
