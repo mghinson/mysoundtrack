@@ -9,22 +9,6 @@ body {
   line-height: 1.5;
   color: #606c71; }
 
-.basic-slide:focus,
-.basic-slide:active {
-  color: #377D6A;
-  text-indent: 0;
-  background: #fff;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  
-  &::-webkit-input-placeholder {
-    color: #aaa;
-  }
-  + label {
-    transform: translateX(-100%);
-  }
-}
-
 a {
   color: #1e6bb8;
   text-decoration: none; }
