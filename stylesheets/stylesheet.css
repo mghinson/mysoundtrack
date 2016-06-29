@@ -16,7 +16,7 @@ body {
   width: 250px;
   height: 60px;
   vertical-align: text-center;
-  background-color:rgba(0,0,0);
+  background-color:rgba(0,0,0,.01);
   /*border-top-left-radius: 0;
   border-bottom-left-radius: 0;*/
   border: 0;
