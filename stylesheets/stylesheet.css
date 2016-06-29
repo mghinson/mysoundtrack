@@ -13,7 +13,7 @@ body {
 .basic-slide:active {
   color: #377D6A;
   text-indent: 0;
-  background: #fff;
+  background-color:rgba(0,0,0,0.1);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   
