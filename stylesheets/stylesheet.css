@@ -9,11 +9,11 @@ body {
   line-height: 1.5;
   color: #606c71; }
 
-.basic-slide {
+.basic-slide:focus, input:focus {
   color: rgba(0,0,0,.1); 
   text-indent: 0;
   outline: none;
-  width: 300px;
+  width: 250px;
   height: 25px;
   background-color:rgba(0,0,0,.1);
   border-top-left-radius: 0;
