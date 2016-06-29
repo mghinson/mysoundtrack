@@ -9,8 +9,7 @@ body {
   line-height: 1.5;
   color: #606c71; }
 
-.basic-slide:focus,
-.basic-slide:active {
+.basic-slide {
   color: #377D6A;
   text-indent: 0;
   background-color:rgba(0,0,0,0.1);
