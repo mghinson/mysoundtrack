@@ -14,8 +14,9 @@ body {
   text-indent: 0;
   outline: none;
   width: 250px;
-  height: 25px;
-  background-color:rgba(0,0,0,.1);
+  height: 60px;
+  vertical-align: text-center;
+  background-color:rgba(0,0,0);
   /*border-top-left-radius: 0;
   border-bottom-left-radius: 0;*/
   border: 0;
