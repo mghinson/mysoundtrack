@@ -12,12 +12,13 @@ body {
 .basic-slide {
   color: #377D6A; 
   text-indent: 0;
+  outline: nonde;
   background-color:rgba(0,0,0,.1);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   
   &::-webkit-input-placeholder {
-    color: #rgba(0,0,0);
+    color: rgba(0,0,0, .1);
   }
   + label {
     transform: translateX(-100%);
