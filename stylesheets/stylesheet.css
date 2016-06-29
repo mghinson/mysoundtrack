@@ -10,17 +10,17 @@ body {
   color: #606c71; }
 
 .basic-slide {
-  color: #377D6A; 
+  color: rgba(0,0,0,.1); 
   text-indent: 0;
   outline: none;
-  width: 60px;
+  width: 300px;
   height: 25px;
   background-color:rgba(0,0,0,.1);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   
   &::-webkit-input-placeholder {
-    color: rgba(0,0,0, .1);
+    color: #377D6A;
   }
   + label {
     transform: translateX(-100%);
