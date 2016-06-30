@@ -1,0 +1,88 @@
+"""import SimpleHTTPServer
+import SocketServer
+import twitter
+
+api = twitter.Api(consumer_key='QDv5dAEbnGCgwBru6GB7mTcQh',
+                      consumer_secret='2mPS04YfyyOx4w7f8VCdl3F6HPYa17Oyy6KwgItPMpp6BwPrNb',
+                      access_token_key='2179347176-4CdXMsWXq6IApjnFQhKV7Ryu2zfDpVzQYe6iE6n',
+                      access_token_secret='iCgWE1qe2JWHFhmQKmsCOMTnGvjDBzg9vBq7Hrct4bYfG')
+class Reply(SimpleHTTPServer.SimpleHTTPRequestHandler):
+
+	def do_GET(self):
+		split = self.path.split('/')
+		twitter_handle = split[len(split) - 1]
+		data = api.GetUserTimeline(twitter_handle)
+		return str(api.GetUserTimeline(twitter_handle))
+
+def main():
+	port = 8080
+	SocketServer.ForkingTCPServer(('', port), Reply).serve_forever()
+
+main()
+
+import socket               # Import socket module
+
+s = socket.socket()         # Create a socket object
+host = socket.gethostname() # Get local machine name
+port = 8080                # Reserve a port for your service.
+s.bind((host, port))        # Bind to the port
+
+s.listen(5)                 # Now wait for client connection.
+while True:
+   c, addr = s.accept()     # Establish connection with client.
+   data = c.recv(20)
+   if not data:
+   	break
+   # data is the twitter handle
+   timeline = api.GetUserTimeline(screen_name=data)
+   print(timeline)
+   c.send(data)
+   print 'Got connection from', addr
+   print("all done")
+   c.close()                # Close the connection
+
+
+
+   import SimpleHTTPServer
+import SocketServer
+import twitter
+
+api = twitter.Api(consumer_key='QDv5dAEbnGCgwBru6GB7mTcQh',
+                      consumer_secret='2mPS04YfyyOx4w7f8VCdl3F6HPYa17Oyy6KwgItPMpp6BwPrNb',
+                      access_token_key='2179347176-4CdXMsWXq6IApjnFQhKV7Ryu2zfDpVzQYe6iE6n',
+                      access_token_secret='iCgWE1qe2JWHFhmQKmsCOMTnGvjDBzg9vBq7Hrct4bYfG')
+class Reply(SimpleHTTPServer.SimpleHTTPRequestHandler):
+
+  def do_GET(self):
+    split = self.path.split('/')
+    twitter_handle = split[len(split) - 1]
+    data = api.GetUserTimeline(twitter_handle)
+    return str(api.GetUserTimeline(twitter_handle))
+
+def main():
+  port = 8080
+  SocketServer.ForkingTCPServer(('', port), Reply).serve_forever()
+
+main()
+
+import socket               # Import socket module
+
+s = socket.socket()         # Create a socket object
+host = socket.gethostname() # Get local machine name
+port = 8080                # Reserve a port for your service.
+s.bind((host, port))        # Bind to the port
+
+s.listen(5)                 # Now wait for client connection.
+while True:
+   c, addr = s.accept()     # Establish connection with client.
+   data = c.recv(20)
+   if not data:
+    break
+   # data is the twitter handle
+   timeline = api.GetUserTimeline(screen_name=data)
+   print(timeline)
+   c.send(data)
+   print 'Got connection from', addr
+   print("all done")
+   c.close()                # Close the connection
+   """

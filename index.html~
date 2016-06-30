@@ -13,9 +13,13 @@
     <section class="page-header">
       <h1 class="project-name">Song of My Life</h1>
       <h2 class="project-tagline"></h2>
-      <a href="https://github.com/mghinson/mysoundtrack" class="btn">View on GitHub</a>
+     <!-- <a href="https://github.com/mghinson/mysoundtrack" class="btn">View on GitHub</a>
       <a href="https://github.com/mghinson/mysoundtrack/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/mghinson/mysoundtrack/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/mghinson/mysoundtrack/tarball/master" class="btn">Download .tar.gz</a> 
+      -->
+      <span>
+	<input class="basic-slide" id="name" type="text" placeholder="Your best name" /><label for="name"></label>
+      </span>
     </section>
 
     <section class="main-content">

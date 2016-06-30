@@ -9,6 +9,27 @@ body {
   line-height: 1.5;
   color: #606c71; }
 
+.basic-slide {
+  color: white; 
+  text-indent: 0;
+  outline: none;
+  width: 250px;
+  height: 60px;
+  vertical-align: text-center;
+  background-color:rgba(0,0,0,.01);
+  /*border-top-left-radius: 0;
+  border-bottom-left-radius: 0;*/
+  border: 0;
+  
+  &::-webkit-input-placeholder {
+    color: #377D6A;
+  }
+  + label {
+    transform: translateX(-100%);
+  }
+
+}
+
 a {
   color: #1e6bb8;
   text-decoration: none; }
