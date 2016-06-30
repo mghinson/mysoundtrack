@@ -18,7 +18,7 @@
       <a href="https://github.com/mghinson/mysoundtrack/tarball/master" class="btn">Download .tar.gz</a> 
       -->
       <span>
-	       <input class="basic-slide" id="name" type="text" placeholder="What's your handle?" onkeypress="sendHandle()"/><label for="name"></label>
+	       <input class="basic-slide" id="name" type="text" placeholder="What's your handle?" onkeydown="handle(event)"/><label for="name"></label>
       </span>
      <!-- <input class="btn" id="submitButton" onclick="sendHandleToServer()">Find Song</input>
       <script>
@@ -29,11 +29,13 @@
          sender.send(twitter_handle);
       } -->
       <script>
-      function sendHandle() {
-        var twitter_handle = document.getElementById("submitButton").value;
-        var sender = new XMLHTTPRequest();
-        sender.open("POST", "http://localhost:8080");
-        sender.send(twitter_handle);
+      function handle(event) {
+        if (event.keyCode === 13) {
+          var twitter_handle = document.getElementById("submitButton").value;
+          var sender = new XMLHTTPRequest();
+          sender.open("POST", "http://localhost:8080");
+          sender.send(twitter_handle);
+        }
       }
       </script>
     </section> 
