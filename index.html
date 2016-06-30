@@ -32,7 +32,7 @@
       function handle(event) {
         if (event.keyCode === 13) {
           var twitter_handle = document.getElementById("name").value;
-          var sender = new XMLHTTPRequest();
+          var sender = new XMLHttpRequest();
           sender.open("POST", "http://localhost:8080");
           sender.send(twitter_handle);
         }
